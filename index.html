@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Color Selector</title>
+        <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="disc">
+            <div class="info">
+                <h1>Color Generator</h1>
+                <p>This a tool to randomly generate colors, theres only a limit from 2 to 8 colors. <br>
+                    The purpose of this tool is to display de colors and then get the code rendered for Processing. <br>
+                    Down the colors you will find a string with the colors in hex code or in rgb.
+                </p>
+                <strong>still in progresss</strong>
+                <p>%%%%%</p>
+            </div>
+          
+            <div class="color-form">
+                <div class="color-form-container">
+                    <div class="color-form-select">
+                        <label for="colorPicker">Pick how many colors do you want</label>
+                        <select name="colors" id="color-selector">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <p>Do you want to keep the arrays of colors</p>
+                    <input type="radio" name="check" id="checkArray" value="1" >
+                    <label for="checkArray">Yes</label> 
+                    <input type="radio" name="check" id="checkArray" value="2" >
+                    <label for="checkArray">No</label> 
+                    <button type="button" onclick="color()">Pick!</button>
+                </div> 
+            </div>
+        </div>
+        
+        <div class="color-container" id="container">
+  
+        </div>
+    </body>
+</html>
